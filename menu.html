@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/menu_style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" href="css/style.css"></script>
+  <script src="https://kit.fontawesome.com/7f11af4177.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+  <title>メニュー一覧｜sieste｜渋谷店カフェ　シエスタ</title>
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+
+   <!--ヘッダー部分-->
+ <header>
+  <a href ="index.html#top" class ="header-logo"><img src ="img/logo.jpg.png" alt ="ロゴマーク"></a>
+ </header>
+ <!-- ハンバーガーメニュー -->
+ <div class="drawer">
+   <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+   <input type="checkbox" id="drawer-check" class="drawer-hidden" >
+
+   <!-- ハンバーガーアイコン -->
+   <label for="drawer-check" class="drawer-open"><span></span></label>
+   
+   <!-- メニュー -->
+   <nav class="drawer-content">
+     <a href="index.html#top"><div class ="drawer-logo"><img src ="img/logo.jpg.png" alt ="ロゴマーク"></div></a>
+     <ul class="drawer-list" style="list-style:none;">
+       <img src ="img/menuview.png" alt ="メニュー背景画像">
+       <div class ="drawer-txtbox">
+         <li class="drawer-item">
+           <a href="index.html#concept">Concept</a>
+         </li>
+         <li class="drawer-item">
+           <a href="index.html#commitment">Commitment</a>
+         </li>
+         <li class="drawer-item">
+           <a href="/#menu">Menu</a>
+         </li>
+         <li class="drawer-item">
+           <a href="index.html#shopinfo">Shop info</a>
+         </li>
+         <li class="drawer-item">
+           <a href="index.html#news">News</a>
+         </li>
+         <li class="drawer-item">
+           <a href="/#contact">Contact</a>
+         </li>
+       </div>
+     </ul>
+   </nav>
+   <!-- ハンバーガーメニュー終了 -->
+ </div>
+ <!--ヘッダー部分終了-->
+
+  <!--メニュー部分-->
+  <section>
+    <div class="menu-page">
+      <div class ="heading-txtbox2" id ="menu"><h2>Menu</h2></div>
+      <div class ="menu-title">
+
+        <div class ="accordion_btn">
+          <img src ="img/menutitle1.png">
+          <div class ="menu-page-txt">コーヒー、紅茶</div>
+        </div>
+
+        <div class ="accordion_content">
+          <div class ="menu-box" id ="menu-box1">
+            <img src ="img/menuabout1.png" alt ="オリジナルサイフォンコーヒー">
+            <h1>オリジナルサイフォンコーヒー</h1>
+            <p>当店イチオシの、コクが深く香り豊かなコーヒーです。お客様の目の前でお作りさせていただきます。すっきりとした味わいのためコーヒーの苦みに慣れない方でもお楽しみいただけます。</p>
+            <h3>420円(税抜)</h3>
+          </div>
+          <div class ="menu-box" id ="menu-box2">
+            <img src ="img/menuabout2.png" alt ="アメリカンコーヒー">
+            <h1>アメリカンコーヒー</h1>
+            <p>オーソドックスかつ本場の味わいを楽しみたい方におすすめの、軽くソフトな味わいのコーヒーです。当店提供のビスケットと合わせるとより美味しくいただけます。</p>
+            <h3>450円(税抜)</h3>
+          </div>
+          <div class ="menu-box" id ="menu-box3">
+            <img src ="img/menuabout3.png" alt ="カフェラテ">
+            <h1>カフェラテ</h1>
+            <p>濃厚な味わいとコクが特徴的なカフェラテです。当店では甘味の強いミルクを使用し、どなたでも飲みやすいようお作りしております。ラテアートも合わせてお楽しみください。</p>
+            <h3>500円(税抜)</h3>
+          </div>
+          <div class ="menu-box" id ="menu-box4">
+            <img src ="img/menuabout4.png" alt ="ダッチコーヒー">
+            <h1>ダッチコーヒー</h1>
+            <p>当店オリジナルのコーヒー豆に富士山の雪解け水を使用し、じっくりとドリップさせたコーヒーです。味や香りをじっくりと楽しみたい方に特におすすめの一品です。</p>
+            <h3>500円(税抜)</h3>
+          </div>
+        </div>
+
+        <div class ="accordion_btn">
+          <img src ="img/menutitle2.png">
+          <div class ="menu-page-txt">ケーキ</div>
+        </div>
+
+        <div class ="accordion_content">
+          <div class ="menu-box" id ="menu-box5">
+            <img src ="img/menuabout5.png" alt ="ショートケーキ">
+            <h1>ショートケーキ</h1>
+            <p>ふわりと口の中に広がる甘味が絶妙な当店の人気メニューです。コーヒーのうまみが引き立つような味に仕上げておりますので、お気に入りのコーヒーと一緒に召し上がることをおすすめします。</p>
+            <h3>530円(税抜)</h3>
+          </div>
+          <div class ="menu-box" id ="menu-box6">
+            <img src ="img/menuabout6.png" alt ="オリジナルチーズケーキ">
+            <h1>オリジナルチーズケーキ</h1>
+            <p>当店オリジナルのなめらかな口触りが特徴的なチーズケーキです。ひかえめな甘さで、健康に良い素材を使用していますのでどなたでも美味しくいただけます。お子様のおやつにもどうぞ。</p>
+            <h3>490円(税抜)</h3>
+          </div>
+          <div class ="menu-box" id ="menu-box7">
+            <img src ="img/menuabout7.png" alt ="シロップたっぷりパンケーキ">
+            <h1>シロップたっぷりパンケーキ</h1>
+            <p>甘いシロップをふんだんに使用したパンケーキです。注文を受けてからお作りいたしますので、出来立てのふわふわな状態でお召し上がりいただけます。また卵、小麦粉を抜いた物もお作りできます。</p>
+            <h3>460円(税抜)</h3>
+          </div>
+        </div>
+
+
+        <div class ="accordion_btn">
+          <img src ="img/menutitle3.png">
+          <div class ="menu-page-txt">ランチ</div>
+        </div>
+
+        <div class ="accordion_content">
+          <div class ="menu-box" id ="menu-box8">
+            <img src ="img/menuabout8.png" alt ="ほうれん草のピリ辛ペペロンチーノ">
+            <h1>ほうれん草のピリ辛ペペロンチーノ</h1>
+            <p>ヘルシーで美味しく食べられる料理を追及して生み出された一品です。ほうれん草のおいしさの後にピリッと来る辛さがクセになります。量も200gと、大変満足いただけるものとなっております。</p>
+            <h3>780円(税抜)</h3>
+          </div>
+          <div class ="menu-box" id ="menu-box9">
+            <img src ="img/menuabout9.png" alt ="ナポリタンスパゲティ">
+            <h1>ナポリタンスパゲティ</h1>
+            <p>濃厚かつ自然なおいしさがポイントの一品です。＋100円お支払いいただくとセットでサラダをお付けいたします。女性やお子様でも食べやすい量に設定しております。</p>
+            <h3>720円(税抜)</h3>
+          </div>
+        </div>
+
+        <div class ="accordion_btn">
+          <img src ="img/menutitle4.png">
+          <div class ="menu-page-txt">その他のメニュー</div>
+        </div>
+          
+        <div class ="accordion_content">
+          <div class ="menu-box" id ="menu-box10">
+            <img src ="img/menuabout10.png" alt ="オリジナルクッキー">
+            <h1>オリジナルクッキー</h1>
+            <p>当店のコーヒーとよく合う手作りクッキーです。サクサクとした触感が特徴的で、思わず手が伸びてしまうような一品です。当店のサイフォンコーヒーと合わせていただくのが特におすすめです。</p>
+            <h3>400円(税抜)</h3>
+          </div>
+          <div class ="menu-box" id ="menu-box11">
+            <img src ="img/menuabout11.png" alt ="にんじんマリネのサンドイッチ">
+            <h1>にんじんマリネのサンドイッチ</h1>
+            <p>のびのびと育った国産にんじんを使用した、さわやかな味わいのサンドイッチです。軽食でしっかり栄養を摂りたい方にもおすすめです。朝のコーヒーのおともにぜひどうぞ。</p>
+            <h3>350円(税抜)</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+ </section>
+ <!--メニュー部分終了-->
+
+
+   <!--コンタクト部分-->
+ <section>
+  <div class ="heading-txtbox" id ="contact"><h2>Contact</h2></div>
+  <div class ="contact-txt1"><address>Gメールアドレス：sieste@gmail.com</address></div>
+  <div class ="contact-txt1"><address>電話番号：080-9393-4053</address></div>
+  <div class ="sns-box">
+      <a href ="#"><div class ="icon-box1"><i class="fab fa-facebook-f fa-2x"></i></div></a>
+      <a href ="#"><div class ="icon-box2"><i class="fab fa-twitter fa-2x"></i></div></a>
+      <a href ="#"><div class ="icon-box3"><i class="fab fa-instagram fa-2x"></i></div></a>
+  </div>
+  <div class ="contact-txt-box">
+      <div class ="contact-txt2">プライバシーポリシー・利用規約</div>
+      <div class ="contact-txt3" lang ="en">©  since  2020  SAKURUG  inc.</div>
+  </div>
+</section>
+<!--コンタクト終了部分-->
+  <script src ="js/menu_script.js"></script> 
+</body>
+</html>
