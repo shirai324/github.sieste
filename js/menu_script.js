@@ -119,28 +119,35 @@ $(function(){
     
 
   // アコーディオンメニュー
-  // アコーディオンボタンのクリックイベント発火時にコンテントの開閉を制御する
-  $(".accordion_btn").click(function(){
-    toggleContent(this);
-  });
+//   // アコーディオンボタンのクリックイベント発火時にコンテントの開閉を制御する
+//   $(".accordion_btn").click(function(){
+//     toggleContent(this);
+//   });
 
-  // アコーディオンの開閉の制御
-  function toggleContent(el) {
-    const target = $(el).next();
-    if( target.hasClass("show")){
-      target.removeClass("show");
-      target.animate({
-        "height": "0",
-      },
-      500);
-    } else {
-      target.addClass("show");
-      console.log(target.children());
-      target.animate({
-        "height": ((target.children().length * 530) + 80) + "px",
-      },
-      500);
-    }
-}
+//   // アコーディオンの開閉の制御
+//   function toggleContent(el) {
+//     const target = $(el).next();
+//     if( target.hasClass("show")){
+//       target.removeClass("show");
+//       target.animate({
+//         "height": "0",
+//       },
+//       500);
+//     } else {
+//       target.addClass("show");
+//       console.log(target.children());
+//       target.animate({
+//         "height": ((target.children().length * 530) + 80) + "px",
+//       },
+//       500);
+//     }
+// }
+
+$('.accordion_btn').on('click', function () {
+  /*クリックでコンテンツを開閉*/
+  $(this).next().slideToggle(500);
+  /*矢印の向きを変更*/
+  $(this).toggleClass('open', 500);
+})
 
 });
