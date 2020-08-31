@@ -270,7 +270,7 @@ header img a::after{
 }
 
 .concept p{
-  font-size: 1.6rem;
+  font-size: 130%;
   text-align: left;
   padding: 0 0 0 0;
   line-height: 3rem;
@@ -300,10 +300,15 @@ header img a::after{
 
 .box2{
   position: absolute;
-  right: 4rem;
+  right: 4%;
   top: 1.5rem;
-  width: 18rem;
-  height: 37rem;
+  /* width: 18rem;
+  height: 37rem; */
+  height: 100%;
+  max-height: 37rem;
+  width: 50%;
+  object-fit: cover;
+  object-position: center center;
   background: #658063;
 }
 
@@ -311,12 +316,16 @@ header img a::after{
   position: absolute;
   right: 0;
   bottom: 0;
-  height: 37rem;
+  height: 100%;
+  max-height: 37rem;
+  width: 50%;
+  object-fit: cover;
+  object-position: center center;
   z-index: 2;
 }
 
 .concept-txt{
-  width: 45%;
+  width: 40%;
   height: 41.2rem;
   /* background-color: burlywood; */
 }
@@ -554,7 +563,7 @@ h4:hover{
 }
 
 dl{
-  width: 40rem;
+  width: 80%;
   text-align: left;
   padding-top: 4.6rem;
   margin: auto;
@@ -580,6 +589,19 @@ dd{
 
 .googlemap{
   margin-top: 1.7rem;
+  position:relative;
+  width:100%;
+  height:0;
+  padding-top:75%;
+}
+
+iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 280px;
 }
 /* 店舗情報部分終了 */
 
