@@ -386,13 +386,15 @@ h2{
   width: 100%;
   height: auto;
   position: relative;
+  display: block;
 }
 
 /* メニュー中身部分 */
 .accordion_content {
   width: 100%;
-  height: 0;
-  overflow: hidden;
+  height: auto;
+  display: none;
+  /* overflow: hidden; */
 }
 
 .menu-box{
@@ -427,4 +429,25 @@ h3{
   font-size: 1.4rem;
   font-weight: lighter;
   margin-top: 3rem;
+}
+
+.accordion_btn:after {
+  content: "";
+  position: absolute;
+  right: 2.5rem;
+  top: 38%;
+  transition: all 0.2s ease-in-out;
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-top: solid 0.2rem #fff;
+  border-right: solid 0.2rem #fff;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.accordion_btn.open:after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 45%;
 }
